@@ -15,6 +15,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:contentDescription="@string/app_name"
+        android:paddingTop="16dp"
         app:srcCompat="@drawable/superman" />
 
     <android.support.design.widget.TextInputLayout
@@ -22,6 +23,7 @@
         android:layout_height="wrap_content">
 
         <EditText
+            android:id="@+id/new_member"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:hint="name"
@@ -50,7 +52,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:hint="password"
-            android:inputType="textPassword" />
+            android:inputType="textPassword|textVisiblePassword" />
     </android.support.design.widget.TextInputLayout>
 
     <android.support.v7.widget.AppCompatButton
