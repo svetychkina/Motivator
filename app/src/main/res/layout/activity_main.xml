@@ -14,7 +14,7 @@
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:layout_weight="1"></android.support.v7.widget.Toolbar>
+            android:layout_weight="1" />
 
     </android.support.design.widget.AppBarLayout>
 
@@ -39,6 +39,11 @@
         android:layout_margin="16dp"
         android:clickable="true"
         android:focusable="true"
+        android:onClick="addNewGoal"
         android:src="@android:drawable/ic_menu_add"
-        app:backgroundTint="@android:color/holo_orange_dark" />
+
+        app:backgroundTint="@android:color/holo_orange_dark"
+        app:fabSize="normal"
+        app:layout_anchor="@id/include"
+        app:layout_anchorGravity="bottom|right|end" />
 </android.support.design.widget.CoordinatorLayout>

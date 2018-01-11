@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_dark"
+    android:orientation="vertical"
+    tools:context="com.conscience.motivator.NewGoalActivity">
+
+    <EditText
+        android:id="@+id/goalTitleEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="4dp"
+        android:autoSizeMaxTextSize="50dp"
+        android:editable="true"
+        android:ems="10"
+        android:hint="Goal title"
+        android:inputType="text|textShortMessage"
+        android:textColorLink="@android:color/background_light" />
+
+    <EditText
+        android:id="@+id/goalTextEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="4dp"
+        android:autoSizeMaxTextSize="200dp"
+        android:editable="true"
+        android:ems="10"
+        android:hint="Goal text"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:hint="Date"
+        android:inputType="datetime" />
+
+    <DatePicker
+        android:id="@+id/datePicker2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:datePickerMode="spinner"
+        android:headerBackground="@android:color/holo_orange_dark"
+        android:spinnersShown="true" />
+
+    <Button
+        android:id="@+id/addButton"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@android:color/holo_orange_dark"
+        android:text="Add goal" />
+</LinearLayout>
