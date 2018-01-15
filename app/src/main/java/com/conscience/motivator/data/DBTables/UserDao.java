@@ -8,12 +8,14 @@ import android.arch.persistence.room.Query;
 import java.util.List;
 
 @Dao
-public interface UserDAO {
-    @Query("SELECT phone,password from User WHERE username LIKE :name AND password LIKE :pass")
+public interface UserDao {
+    //TODO make right request
+//    @Query("SELECT phone, password from Users WHERE username LIKE :name AND password LIKE :pass")
+    @Query("SELECT * from Users")
     List<User> getAll();
 
-    @Query("SELECT * FROM user WHERE first_name LIKE :first AND "
-            + "last_name LIKE :last LIMIT 1")
+    @Query("SELECT * FROM Users WHERE username LIKE :first AND "
+            + "password LIKE :last LIMIT 1")
     User findByName(String first, String last);
 
     @Insert

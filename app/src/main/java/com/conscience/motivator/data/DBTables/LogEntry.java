@@ -4,8 +4,8 @@ import android.arch.persistence.room.Entity;
 import android.arch.persistence.room.PrimaryKey;
 
 @Entity(tableName = "LOG")
-public class Log{
-    @PrimaryKey
+public class LogEntry {
+    @PrimaryKey(autoGenerate = true)
     public int logid;
 
     public int goalid;

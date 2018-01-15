@@ -5,7 +5,7 @@ import android.arch.persistence.room.PrimaryKey;
 
 @Entity(tableName = "Followers")
 public class Follower{
-    @PrimaryKey
+    @PrimaryKey(autoGenerate = true)
     public int follid;
 
     public int userid;

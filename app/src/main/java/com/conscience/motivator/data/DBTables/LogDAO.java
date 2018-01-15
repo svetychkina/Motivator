@@ -7,9 +7,9 @@ import java.util.List;
 
 @Dao
 public interface LogDAO {
-    @Query("SELECT * from LOG")
-    List<Log> getAll();
+    @Query("SELECT * from LogEntry")
+    List<LogEntry> getAll();
 
-    @Query("SELECT goalid from LOG WHERE userid = 0")
-    List<Log> get();
+    @Query("SELECT goalid from LogEntry WHERE userid = 0")
+    List<LogEntry> get();
 }

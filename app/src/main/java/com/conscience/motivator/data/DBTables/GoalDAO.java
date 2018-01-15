@@ -16,7 +16,7 @@ public interface GoalDAO {
     Goal findByUser(String userID);
 
     @Insert
-    void insertGoal(Goal goal1, Goal goal2);
+    void insertGoal(Goal... goals);
 
     @Delete
     void delete(Goal goal);
