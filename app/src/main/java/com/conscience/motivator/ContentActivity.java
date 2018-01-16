@@ -13,7 +13,7 @@ public class ContentActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.content_navigation);
+        setContentView(R.layout.card_layout);
 
         chronometer = (Chronometer)findViewById(R.id.goalTime);
         chronometer.setFormat("H:MM:SS");

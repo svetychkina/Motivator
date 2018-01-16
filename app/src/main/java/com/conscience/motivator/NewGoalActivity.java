@@ -43,7 +43,7 @@ public class NewGoalActivity extends AppCompatActivity {
                                             "DAY:" + day);
                     }
                 });
-        Button button = (Button)findViewById(R.id.button);
+        /*Button button = (Button)findViewById(R.id.button);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -60,7 +60,7 @@ public class NewGoalActivity extends AppCompatActivity {
                 currentDate();
                 return true;
             }
-        });
+        });*/
     }
 
     public void currentDate(){

@@ -12,13 +12,15 @@ public class Goal{
 
     public String goalTitle;
     public String description;
-    public String condition;
+    public String goalDate;
+    public String goalTime;
     public int userid;
 
-    public Goal (String goalTitle, String description, String condition, int userid){
+    public Goal (String goalTitle, String description, String goalDate, String goalTime, int userid){
         this.goalTitle = goalTitle;
         this.description = description;
-        this.condition = condition;
+        this.goalDate = goalDate;
+        this.goalTime = goalTime;
         this.userid = userid;
     }
 

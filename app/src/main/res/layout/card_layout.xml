@@ -6,45 +6,60 @@
     android:layout_height="wrap_content"
     android:layout_margin="5dp"
     android:clickable="true"
+    android:focusable="true"
     android:foreground="?selectableItemBackground"
+    app:cardBackgroundColor="?attr/actionModeSplitBackground"
     app:cardCornerRadius="12dp"
     app:cardElevation="3dp"
     app:contentPadding="4dp">
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="92dp">
-
-        <Chronometer
-            android:id="@+id/chronometer2"
-            android:layout_width="130dp"
-            android:layout_height="match_parent"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="false"
-            android:layout_centerHorizontal="false"
-            android:layout_centerInParent="false"
-            android:layout_centerVertical="false"
-            android:format="01:00:00"
-            android:gravity="center_vertical|center_horizontal"
-            android:textSize="18sp" />
+        android:layout_height="90dp">
 
         <TextView
             android:id="@+id/goalTitle"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
             android:layout_alignParentTop="true"
-            android:layout_toEndOf="@+id/chronometer2"
+            android:layout_toEndOf="@+id/goalDate"
+            android:gravity="center_vertical"
             android:text="TextView"
+            android:textColor="@android:color/background_light"
             android:textSize="24sp" />
 
         <TextView
             android:id="@+id/goalDetail"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
             android:layout_below="@+id/goalTitle"
-            android:layout_toEndOf="@+id/chronometer2"
-            android:text="TextView" />
+            android:layout_toEndOf="@+id/goalTime"
+            android:gravity="center_vertical"
+            android:text="TextView"
+            android:textColor="@android:color/background_light" />
+
+        <TextView
+            android:id="@+id/goalDate"
+            android:layout_width="150dp"
+            android:layout_height="45dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:gravity="bottom|center_horizontal"
+            android:text="TextView"
+            android:textColor="@android:color/background_light" />
+
+        <TextView
+            android:id="@+id/goalTime"
+            android:layout_width="150dp"
+            android:layout_height="45dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:gravity="top|center_horizontal"
+            android:text="TextView"
+            android:textColor="@android:color/background_light" />
     </RelativeLayout>
 
 </android.support.v7.widget.CardView>

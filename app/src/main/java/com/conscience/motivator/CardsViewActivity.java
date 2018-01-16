@@ -1,6 +1,6 @@
+/*
 package com.conscience.motivator;
 
-import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
@@ -15,9 +15,9 @@ public class CardsViewActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.cards_view);
+        setContentView(R.layout.activity_main);
 
-        recyclerView = (RecyclerView)findViewById(R.id.recyclerView);
+        recyclerView = findViewById(R.id.recyclerView);
         recyclerView.setHasFixedSize(true);
         layoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(layoutManager);
@@ -26,3 +26,4 @@ public class CardsViewActivity extends AppCompatActivity {
         recyclerView.setAdapter(adapter);
     }
 }
+*/
